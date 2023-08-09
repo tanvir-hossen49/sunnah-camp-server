@@ -1,0 +1,35 @@
+# Node.js / npm
+node_modules/
+node_modules
+npm-debug.log*
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+public/assets/vendor
+
+# Environment
+.env
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.code-workspace
+
+# macOS
+.DS_Store
+
+# Thumbnails
+Thumbs.db
+*.thumb
+
+# Files
+*.swp
