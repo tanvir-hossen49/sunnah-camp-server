@@ -2,7 +2,7 @@ const Users = require("../model/userModel.js");
 const createError = require("http-errors");
 const { successResponse } = require("./responseController.js");
 
-const getAllUsers = async (req, res, next) => {
+const getAllUsers = async (_req, res, next) => {
   try {
     const user = await Users.find();
 

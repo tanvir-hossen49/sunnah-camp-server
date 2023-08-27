@@ -8,6 +8,7 @@ const { errorResponse } = require("./controller/responseController");
 const instructorRouter = require("./routes/instructorRoutes");
 const stripe = require("stripe")(process.env.PAYMENT_SECRET_KEY);
 const morgan = require("morgan");
+const studentRouter = require("./routes/studentRouter");
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/users", userRouter);
 app.use("/api/jwt", jwtRouter);
 app.use("/api/instructors", instructorRouter);
+app.use("/api/students", studentRouter);
 
 // async function run() {
 //   try {
